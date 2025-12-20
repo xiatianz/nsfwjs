@@ -1,17 +1,56 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
-yarn-error.log
-.vscode
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
 
-examples/manual-testing/data/*
-!examples/manual-testing/data/index.html
-!examples/manual-testing/data/animations/
-!examples/manual-testing/data/images/
-!examples/manual-testing/data/videos/
+# Testing
+coverage/
+*.lcov
+.nyc_output
 
-/models/**/*.js
-/models/**/*.min.js
+# Misc
+*.pem
 
-# Local Netlify folder
-.netlify
+# Debug
+npm-debug.log*
+
+# Local env files
+.env*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

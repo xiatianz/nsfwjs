@@ -11,6 +11,7 @@
     "require": "./dist/cjs/index.js"
   },
   "scripts": {
+    "start": "node nsfwjs_compatible_server_v2.js",
     "lint": "tslint -p . -t verbose",
     "build:esm": "tsc -p ./tsconfig.esm.json && node ./scripts/add-extensions.mjs",
     "build:cjs": "tsc -p ./tsconfig.cjs.json",
@@ -77,5 +78,9 @@
     "url": "https://github.com/infinitered/nsfwjs/issues"
   },
   "homepage": "https://nsfwjs.com",
-  "dependencies": {}
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "express": "^5.2.1",
+    "node-fetch": "^2.7.0"
+  }
 }

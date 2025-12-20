@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "build": {
+    "command": "yarn build",
+    "outputDirectory": "."
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/vercel_nsfw_api.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
