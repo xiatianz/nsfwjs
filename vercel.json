@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/vercel_nsfw_api.js"
-    }
-  ],
   "env": {
     "NODE_ENV": "production"
   }
